@@ -1,0 +1,12 @@
+--drop table t_user;
+create table user(
+sap_id varchar(20) primary key,
+user_name varchar(30),
+password varchar(30),
+user_type varchar(20),
+status char --A: Normal C:Clock  B:inValid
+)engine=InnoDB;
+
+insert into user values('01096790','JonyLi','19890101','admin','A');
+insert into user values('01138385','RosenChen','19920602','user','A');
+insert into user values('01135585','DesoLin','19941124','user','B');
